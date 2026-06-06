@@ -1,0 +1,29 @@
+# Byte-compiled / optimized
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C++ build artifacts
+*.obj
+*.o
+*.exe
+*.exp
+*.lib
+*.bin
+*.a
+
+# Compiled extension modules
+*.pyd
+*.so
+*.dylib
+*.dll
+
+# Distribution / packaging
+build/
+dist/
+.eggs/
+*.egg-info/
+.venv/
+env/
+venv/
+ENV/

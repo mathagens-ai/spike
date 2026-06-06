@@ -1,0 +1,9 @@
+include LICENSE
+include README.md
+include setup.py
+recursive-include spike *.py
+recursive-include snn-core *.h
+recursive-include snn-neural *.h
+recursive-include snn-runtime *.h
+recursive-include snn-training *.h *.cpp
+recursive-include src *.cpp

@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=61.0", "pybind11>=2.4"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spike"
+version = "1.0.0"
+description = "Spike: Super Neural Network C++ Engine with 0.25-bit AVX2 Quantization"
+readme = "README.md"
+license = {text = "Apache-2.0"}
+requires-python = ">=3.10"
+authors = [
+    {name = "Mathagens AI"},
+]
+keywords = [
+    "snn", "spiking-neural-networks", "quantization", "0.25-bit",
+    "hardware-acceleration", "computational-creature", "lateral-inhibition", "autograd"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Programming Language :: C++",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX :: Linux",
+]
+dependencies = [
+    "numpy>=1.24",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "build", "twine"]
+
+[project.urls]
+Homepage = "https://github.com/mathagens-ai/spike"
+Repository = "https://github.com/mathagens-ai/spike"
+Issues = "https://github.com/mathagens-ai/spike/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["spike*"]
